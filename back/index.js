@@ -6,4 +6,4 @@ const port = 3100;
 app.listen(port, ()=>{
     console.log('Servidor corriendo en el puerto' + port)
     console.log(`Servidor corriendo en http://localhost:3100`)
-})
+});
