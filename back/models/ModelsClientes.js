@@ -15,7 +15,7 @@ const Clientes = database.define('clientes', {
         type: DataTypes.STRING
     },
     fecha_nacimiento: {
-        type: DataTypes.DATE
+        type: DataTypes.STRING
     },
     direccion: {
         type: DataTypes.STRING

@@ -1,5 +1,6 @@
 import express from 'express';
 import database from './database/database.js';
+import clienteRouter from './routes/RoutesClientes.js';
 
 const app = express();
 const port = 3100;
@@ -10,6 +11,8 @@ try {
 } catch (error) {
     console.log(`Servidor corriendo: ${error}`)
 }
+
+app.use('/clientes', clienteRouter)
 
 app.listen(port, ()=>{
     console.log('Servidor corriendo en el puerto' + port)
