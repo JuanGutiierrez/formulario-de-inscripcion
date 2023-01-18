@@ -1,8 +1,11 @@
 import { Sequelize } from "sequelize";
 
-const database = new Sequelize('registro_formulario', 'root', '', { 
+const database = new Sequelize('registro', 'root', '', { 
     host: 'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
+    define: {
+        timestamps: true
+    }
 });
 
 export default database 

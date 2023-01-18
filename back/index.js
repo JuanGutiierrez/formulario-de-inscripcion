@@ -7,12 +7,15 @@ const port = 3100;
 
 try {
     await database.authenticate()
+    database.sync()
     console.log(`Servidor corriendo`)
 } catch (error) {
     console.log(`Servidor corriendo: ${error}`)
 }
 
-app.use('/clientes', clienteRouter)
+app.use(express.json());
+
+app.use('/clientes', clienteRouter);
 
 app.listen(port, ()=>{
     console.log('Servidor corriendo en el puerto' + port)
