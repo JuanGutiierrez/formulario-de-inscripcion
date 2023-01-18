@@ -44,6 +44,12 @@ body{
     justify-content: space-between;
 }
 
+.contForm{
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
 
 /* .footer{
     width: 100%;
