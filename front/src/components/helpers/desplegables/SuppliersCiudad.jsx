@@ -22,6 +22,7 @@ const SuppliersCiudad = () => {
         <section>
                 <p >Ciudad : {selectCiudad}</p>
                 <Select
+                    defaultValue= {{label: 'Ciudad', value: 'Ciudad'}}
                     options = {suppliersCiudad}
                     onChange = {selectChangeCiudad}
                 />
