@@ -21,6 +21,7 @@ const SuppliersId = () => {
         <section>
             <p >Identificación : {selectId}</p>
                 <Select
+                    defaultValue= {{label: 'Identificación', value: 'Identificación'}}
                     options = {suppliersId}
                     onChange = {selectChangeId}
                 />
