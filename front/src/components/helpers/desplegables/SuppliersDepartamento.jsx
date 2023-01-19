@@ -21,7 +21,7 @@ const SuppliersDepartamento = () => {
 
     return (
         <section>
-            <p >Departamento : {selectDepartamento}</p>
+            <p >Departamento : {/* {selectDepartamento} */}</p>
                 <Select
                     defaultValue= {{label: 'Departamento', value: 'Departamento'}}
                     options = {suppliersDepartamento}

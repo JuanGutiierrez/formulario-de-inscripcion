@@ -10,11 +10,16 @@ const FormularioClientes = () => {
         <section>
             <form action="">
                 <SuppliersId />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
+                <p>Número de identificación</p>
+                <input placeholder='Número de identificación' type="text" />
+                <p>Nombres</p>
+                <input placeholder='Nombres' type="text" />
+                <p>Apellidos</p>
+                <input placeholder='Apellidos' type="text" />
+                <p>Fecha de nacimiento</p>
+                <input placeholder='Fecha de nacimiento' type="date" />
+                <p>Dirección</p>
+                <input placeholder='Dirección' type="text" />
                 <SuppliersCiudad />
                 <SuppliersDepartamento />
                 <SuppliersPais />
