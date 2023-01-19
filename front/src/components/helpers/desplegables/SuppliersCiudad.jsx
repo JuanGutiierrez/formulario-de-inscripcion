@@ -1,7 +1,3 @@
-import React from "react";
-import { useState } from "react";
-import Select from "react-select";
-
 const suppliersCiudad = [
     {"city": "Bogotá"}, 
     {"city": "Medellín"}, 
@@ -1106,6 +1102,11 @@ const suppliersCiudad = [
     {"city": "Taraira"}, 
     {"city": "San José de Uré"},
 ] 
+
+import React from "react";
+import { useState } from "react";
+import Select from "react-select";
+import axios from 'axios';
 
 const SuppliersCiudad = () => {
     

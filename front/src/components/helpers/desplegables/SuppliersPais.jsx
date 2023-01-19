@@ -1,7 +1,3 @@
-import React from "react";
-import { useState } from "react";
-import Select from "react-select";
-
 const suppliersPais = [
 	{"id" : 144, "name" : "Afganistán"},
 	{"id" : 114, "name" : "Albania"},
@@ -218,6 +214,11 @@ const suppliersPais = [
 	{"id" : 116, "name" : "Zambia"},
 	{"id" : 96, "name" : "Zimbabwe"},
 ]
+
+import React from "react";
+import { useState } from "react";
+import Select from "react-select";
+import axios from 'axios';
 
 const SuppliersPais = () => {
 

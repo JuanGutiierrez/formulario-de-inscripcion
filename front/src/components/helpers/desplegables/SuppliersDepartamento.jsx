@@ -1,7 +1,3 @@
-import React from "react";
-import { useState } from "react";
-import Select from "react-select";
-
 const suppliersDepartamento = [
     {"id": 0, "departamento": "Amazonas"},
     {"id": 1, "departamento": "Antioquia"},
@@ -37,6 +33,10 @@ const suppliersDepartamento = [
     {"id": 31, "departamento": "Vichada"},
 ]
 
+import React from "react";
+import { useState } from "react";
+import Select from "react-select";
+import axios from 'axios';
 
 const SuppliersDepartamento = () => {
     
