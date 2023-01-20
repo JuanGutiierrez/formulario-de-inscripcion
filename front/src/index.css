@@ -32,6 +32,12 @@ body{
     font-style: oblique;
     border-radius: 6%;
     border: solid 2px black;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    border: none;
 }
 
 .sectionImgsLinea{

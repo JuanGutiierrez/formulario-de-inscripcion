@@ -1119,7 +1119,7 @@ const SuppliersCiudad = () => {
     return (
         <section>
                 <p > {/* {selectCiudad} */}</p>
-                <Select 
+                <Select className='inputs'
                     defaultValue= {{label: 'Ciudad', value: 'Ciudad'}}
                     options = {suppliersCiudad.map(sup => ({label: sup.city, value: sup.id}))}
                     onChange = {selectChangeCiudad}

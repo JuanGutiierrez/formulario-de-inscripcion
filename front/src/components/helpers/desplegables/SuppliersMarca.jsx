@@ -23,7 +23,7 @@ const SuppliersMarca = () => {
     return (
         <section>
             <p >{/* {selectMarca} */}</p>
-                <Select
+                <Select className="inputs"
                     defaultValue= {{label: 'Marca', value: 'Marca'}}
                     options = {suppliersMarca}
                     onChange = {selectChangeMarca}

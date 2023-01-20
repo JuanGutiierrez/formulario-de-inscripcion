@@ -49,7 +49,7 @@ const SuppliersDepartamento = () => {
     return (
         <section>
             <p >{/* {selectDepartamento} */}</p>
-                <Select
+                <Select className='inputs'
                     defaultValue= {{label: 'Departamento', value: 'Departamento'}}
                     options = {suppliersDepartamento.map(sup => ({label: sup.departamento, value: sup.id}))}
                     onChange = {selectChangeDepartamento}
