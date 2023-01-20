@@ -11,7 +11,7 @@ const apiClientes = 'http://localhost:3100/clientes';
 
 const FormularioClientes = () => {
 
-    const [numero_identificacion, setNumero_Identificacion] = useState('')
+/*     const [numero_identificacion, setNumero_Identificacion] = useState('')
     const [nombres, setNombres] = useState('')
     const [apellidos, setApellidos] = useState('')
     const [fecha_nacimiento, setFecha_Nacimiento] = useState('')
@@ -19,7 +19,7 @@ const FormularioClientes = () => {
     const [ciudad, setCiudad] = useState('')
     const [departamento, setDepartamento] = useState('')
     const [pais, setPais] = useState('')
-    const [marca, setMarca] = useState('')
+    const [marca, setMarca] = useState('') */
 
 
     return (

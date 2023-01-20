@@ -1,11 +1,11 @@
 import { Sequelize } from "sequelize";
-import Ciudades from "../models/ModelsCiudad.js";
+import Marcas from "../models/ModelsMarcas.js";
 
-const crearCiudad = async(req, res) => {
+const crearMarcas = async(req, res) => {
     try {
-        await Ciudades.create(req.body)
+        await Marcas.create(req.body)
         res.json({
-            message: 'Ciudad creada correctamente'
+            message: 'Marca creada correctamente'
         })
     } catch (error) {
         res.json({
@@ -13,10 +13,10 @@ const crearCiudad = async(req, res) => {
         })
     }
 }
-const mostrarCiudades = async(req, res) => {
+const mostrarMarcas = async(req, res) => {
     try {
-        const ciudades = await Ciudades.findAll()
-        res.json(ciudades)
+        const marcas = await Marcas.findAll()
+        res.json(marcas)
     } catch (error) {
         res.json({
         Message: 'Base de datos vacia'
@@ -24,10 +24,10 @@ const mostrarCiudades = async(req, res) => {
     }
 }
 
-const mostrarCiudad = async (req, res)=>{
+const mostrarMarca = async (req, res)=>{
     const { Op } = Sequelize
     try {
-        const ciudades = await Ciudades.findOne({
+        const marcas = await Marcas.findOne({
             where: {
                 [Op.or]: [
                 {id: req.params.id},
@@ -35,16 +35,16 @@ const mostrarCiudad = async (req, res)=>{
                 ]
             }
         })
-        res.json(ciudades)
+        res.json(marcas)
     } catch (error) {
         res.json({
-            Message: 'La ciudad no existe en la base de datos. ' + error
+            Message: 'La marca no existe en la base de datos. ' + error
         })
     }
 }
 
 export{
-    crearCiudad,
-    mostrarCiudades,
-    mostrarCiudad
+    crearMarcas,
+    mostrarMarcas,
+    mostrarMarca
 }
