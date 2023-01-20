@@ -52,22 +52,25 @@ body{
 }
 
 .form{
-    background: url(components/helpers/imgs/marcas/fondo-form.png);
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin: 5px;
     gap: 40px;
 }
 
-.mainn{
-    background-color: #1e3b8a3d;
-    
+.contFormMain{
+    background-color: #1e3b8a79;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 }
 
-.contInputs{
-    background-color: #1e3b8a79;
+.contInputs, .contInputsId, .contInputsName, .contInputsDate{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -75,15 +78,22 @@ body{
     gap: 40px;
 }
 
+
 .inputs{
     border-radius: 8px;
-    border-color: #c8b5a7;
+    border:solid 1px black;
     padding: 7.5px;
-    background-color: #e76000ec;
+    background-color: #a88b6f4f;
+    text-align: center;
 }
 
-p{
-    background-color: yellow;
+.btnEnviar{
+    cursor: pointer;
+    background-color: #1e3b8a8e;
+    border-radius: 8px;
+    width: 100px;
+    padding: 7.5px;
+    text-align: center;
 }
 
 .footer{

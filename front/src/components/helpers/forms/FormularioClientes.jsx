@@ -25,31 +25,26 @@ const FormularioClientes = () => {
     return (
         <section>
             <form action="" className='form'>
-                <main className='mainn'>
-                <section className='contInputs'>
-                <SuppliersId />
-                <p>Número de identificación</p>
-                <input className='inputs' placeholder='Número de identificación' type="text" />
-                </section>
-                <section className='contInputs'>
-                <p>Nombres</p>
-                <input className='inputs' placeholder='Nombres' type="text" />
-                <p>Apellidos</p>
-                <input className='inputs' placeholder='Apellidos' type="text" />
-                </section>
-                <section className='contInputs'>
-                <p>Fecha de nacimiento</p>
-                <input className='inputs' placeholder='Fecha de nacimiento' type="date" />
-                <p>Dirección</p>
-                <input className='inputs' placeholder='Dirección' type="text" />
-                </section>
-                <section className='contInputs'>
-                <SuppliersPais />
-                <SuppliersMarca />
-                <SuppliersCiudad />
-                <SuppliersDepartamento />
-                </section>
-                <input className='inputs' type="submit" value="Enviar" />
+                <main className='contFormMain'>
+                    <section className='contInputsId'>
+                        <SuppliersId />
+                        <input className='inputs' placeholder='Número de identificación' type="text" />
+                    </section>
+                    <section className='contInputsName'>
+                        <input className='inputs' placeholder='Nombres' type="text" />
+                        <input className='inputs' placeholder='Apellidos' type="text" />
+                    </section>
+                    <section className='contInputsDate'>
+                        <input className='inputs' placeholder='Fecha de nacimiento' type="date" />
+                        <input className='inputs' placeholder='Dirección' type="text" />
+                    </section>
+                    <section className='contInputs'>
+                        <SuppliersPais />
+                        <SuppliersMarca />
+                        <SuppliersCiudad />
+                        <SuppliersDepartamento />
+                    </section>
+                    <input className='inputs btnEnviar' type="submit" value="Enviar" />
                 </main>
             </form>
         </section>

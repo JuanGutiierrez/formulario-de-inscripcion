@@ -20,7 +20,7 @@ const SuppliersId = () => {
     }
     return (
         <section>
-            <p >Identificación  {/* {selectId} */}</p>
+            <p >{/* {selectId} */}</p>
                 <Select
                     defaultValue= {{label: 'Identificación', value: 'Identificación'}}
                     options = {suppliersId}
