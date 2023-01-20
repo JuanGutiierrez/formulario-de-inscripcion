@@ -16,6 +16,7 @@ try {
 app.use(express.json());
 
 app.use('/clientes', clienteRouter);
+app.use('/ciudades', ciudadRouter);
 
 app.listen(port, ()=>{
     console.log('Servidor corriendo en el puerto' + port)

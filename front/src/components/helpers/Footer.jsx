@@ -3,7 +3,7 @@ const Footer = () => {
         <section>
             <footer className="footer">
                 <section>
-                    <p className="footer-copyright">Todos los derechos reservados © 2022</p>
+                    <p className="footer-copyright">Todos los derechos reservados © 2023</p>
                 </section>
             </footer>
         </section>

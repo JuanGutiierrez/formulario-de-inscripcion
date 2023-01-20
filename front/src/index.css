@@ -42,14 +42,48 @@ body{
     justify-content: space-between;
 }
 
-.contForm{
+.contForm{ 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    row-gap: initial;
     height: 68.6vh;
     width: 100%;
+}
+
+.form{
+    background: url(components/helpers/imgs/marcas/fondo-form.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    gap: 40px;
+}
+
+.mainn{
+    background-color: #1e3b8a3d;
+    
+}
+
+.contInputs{
+    background-color: #1e3b8a79;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+.inputs{
+    border-radius: 8px;
+    border-color: #c8b5a7;
+    padding: 7.5px;
+    background-color: #e76000ec;
+}
+
+p{
+    background-color: yellow;
 }
 
 .footer{
@@ -57,12 +91,7 @@ body{
     height: 10.8vh;
     background-color: #1e3a8a;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
-.footer-copyright{
-    margin-left: -536px;
-    padding: 40px;
-    color: #ffffff;
-    opacity: 0.35;
-    }

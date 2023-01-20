@@ -11,7 +11,6 @@ const apiClientes = 'http://localhost:3100/clientes';
 
 const FormularioClientes = () => {
 
-    const [tipo_identificacion, setTipo_Identificacion] = useState('')
     const [numero_identificacion, setNumero_Identificacion] = useState('')
     const [nombres, setNombres] = useState('')
     const [apellidos, setApellidos] = useState('')
@@ -25,22 +24,33 @@ const FormularioClientes = () => {
 
     return (
         <section>
-            <form action="">
+            <form action="" className='form'>
+                <main className='mainn'>
+                <section className='contInputs'>
                 <SuppliersId />
                 <p>Número de identificación</p>
-                <input placeholder='Número de identificación' type="text" />
+                <input className='inputs' placeholder='Número de identificación' type="text" />
+                </section>
+                <section className='contInputs'>
                 <p>Nombres</p>
-                <input placeholder='Nombres' type="text" />
+                <input className='inputs' placeholder='Nombres' type="text" />
                 <p>Apellidos</p>
-                <input placeholder='Apellidos' type="text" />
+                <input className='inputs' placeholder='Apellidos' type="text" />
+                </section>
+                <section className='contInputs'>
                 <p>Fecha de nacimiento</p>
-                <input placeholder='Fecha de nacimiento' type="date" />
+                <input className='inputs' placeholder='Fecha de nacimiento' type="date" />
                 <p>Dirección</p>
-                <input placeholder='Dirección' type="text" />
-                <SuppliersCiudad />
-                <SuppliersDepartamento />
+                <input className='inputs' placeholder='Dirección' type="text" />
+                </section>
+                <section className='contInputs'>
                 <SuppliersPais />
                 <SuppliersMarca />
+                <SuppliersCiudad />
+                <SuppliersDepartamento />
+                </section>
+                <input className='inputs' type="submit" value="Enviar" />
+                </main>
             </form>
         </section>
     )
