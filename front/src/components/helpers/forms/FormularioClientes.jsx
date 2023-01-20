@@ -30,10 +30,10 @@ const FormularioClientes = () => {
             apellido: apellido,
             fecha_nacimiento: fecha_nacimiento,
             direccion: direccion,
-            direccion: direccion,
-            direccion: direccion,
-            direccion: direccion,
-            direccion: direccion
+            ciudad: ciudad,
+            departamento: departamento,
+            pais: pais,
+            marca: marca
         }
         await axios.post(apiClientes, cliente)
     }
